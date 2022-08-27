@@ -4,12 +4,12 @@
 
 # Note
 
-We have slightly customized the default api page<br>
-We change also `filterImageFromURL from './util/util'` as this helper function do not work for some large image link. New version are in util file. It use axios and source is mentioned. 
+We have slightly customized the default api page to make it user firendly 😋️.<br>
+We change also `filterImageFromURL from './util/util'` as this helper function do not work for some large image link. New version are in util file. It use axios and the source is mentioned in util file. 
 
 # Deployment screenshoot
 
-<img scr="./deployment_screenshots/deploy_success.png" alt="deployment image screenshoot">
+<img src="./deployment_screenshots/deploy_success.png" alt="deployment image screenshoot">
 
 # Description 
 
