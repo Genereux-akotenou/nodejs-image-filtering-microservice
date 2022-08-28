@@ -9,10 +9,10 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   app.use(bodyParser.json());
 
   // endpoint1
-  app.get("/filteredimage", async (req, res) => {
+  app.get("/filteredimage", async (req:express.Request, res:express.Response) => {
     try {
       if(req.query.image_url) {
-        let output = await filterImageFromURL(req.query.image_url);
+        let output: string = await filterImageFromURL(req.query.image_url);
         res.status(200).sendFile(output, () => deleteLocalFiles([output]));
       }
       else{
